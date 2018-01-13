@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import json
 
-BUCKET_NAME = 'serverless-machine-learning'
+BUCKET_NAME = 'zappa-10z1mxwy2'
 MODEL_FILE_NAME = 'model.pkl'
 MODEL_LOCAL_PATH = '/tmp/' + MODEL_FILE_NAME
 

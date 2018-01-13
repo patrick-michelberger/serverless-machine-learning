@@ -1,2 +1,4 @@
 zappa
-
+numpy
+scipy
+scikit-learn
