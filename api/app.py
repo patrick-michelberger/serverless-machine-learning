@@ -1,13 +1,11 @@
 from flask import Flask
 from flask import request
 from flask import json
-from sklearn.externals import joblib
 import boto3
 import pickle
 
 BUCKET_NAME = 'serverless-machine-learning'
 MODEL_FILE_NAME = 'model.pkl'
-MODEL_LOCAL_PATH = '/tmp/' + MODEL_FILE_NAME
 
 app = Flask(__name__)
 
