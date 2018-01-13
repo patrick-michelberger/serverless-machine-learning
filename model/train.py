@@ -1,6 +1,6 @@
 from sklearn import datasets
 from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.externals import joblib
+import pickle
 
 # import data
 iris = datasets.load_iris()
@@ -15,4 +15,4 @@ clf = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0,
 clf.fit(X, Y)
 
 # save model
-joblib.dump(clf, 'model.pkl')
+pickle.dump(clf, open("model.pkl", "wb"))
